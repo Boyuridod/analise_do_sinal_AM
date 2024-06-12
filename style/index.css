@@ -6,14 +6,12 @@
 
 .area_equacao {
     padding-bottom: 4%;
-}
 
-.area_equacao 
-label, input {
-    font-size: 1.25em;
-    color: black;
+    label, input {
+        font-size: 1.25em;
+        color: black;
+    }
 }
-
 
 .title  {
     text-align : center;
@@ -30,8 +28,13 @@ label, input {
     background-color: #D3ACEF
 }
 
-#input_maior{
+.botoes_de_acao {
 
-    width: 60px;
+    padding: 1.25em;
 
+    button {
+        padding: 8px;
+        font-size: 1.25em;
+        margin: 15px;
+    }
 }
