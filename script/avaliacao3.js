@@ -1,7 +1,7 @@
 var E0 = 0, fm = 0, fm10 = 0, f0 = 0, f010 = 0, u = 0, fm2 = 0, fm2_10 = 0, f0_2 = 0, f0_2_10 = 0, fm3 = 0, fm3_10 = 0, f0_3 = 0, f0_3_10 = 0;
 var c = 0, m = 0;
 
-function recebeInputs(){
+function recebeValores() {
 
     try {
         E0 = parseFloat(document.getElementById("id1").value) / 2;
@@ -20,40 +20,70 @@ function recebeInputs(){
         f0_3_10 = parseFloat(document.getElementById("id14").value);
 
         let analise = validar();
-        mostrar_sinais(analise);
-        
+
+        if (analise == "Corretas") {
+
+            calcular();
+
+        }
+
+        else {
+
+            alert(analise);
+
+        }
+
     }
 
     catch (error) {
-        alert("error"+error);
+
+        alert("Erro ao receber os dados\n" + error);
+
     }
 
 }
 
-function validar(){
-    let response = true;
-    let string = 'Erro em valores de ';
-    if(fm != fm2 || fm != fm3 || fm2 != fm3){
-        response = false;
-        string += 'dados da frequência mensageira,';
-    } else if(fm10 != fm2_10 || fm10 != fm3_10 || fm2_10 != fm3_10){
-        response = false;
-        string += 'suas potências';
+function validar() {
+    let respostas = 'Verifique se você digitou corretamente os ';
+
+    if (fm != fm2 || fm != fm3 || fm2 != fm3) {
+        respostas += 'dados da frequência mensageira';
+
+        if (fm10 != fm2_10 || fm10 != fm3_10 || fm2_10 != fm3_10) {
+
+            respostas += ' e os valores das potências';
+
+        }
+
     }
+
+    else if (fm10 != fm2_10 || fm10 != fm3_10 || fm2_10 != fm3_10) {
+
+        respostas += 'valores das potências';
+
+    }
+
+    else {
+
+        respostas = "Corretas";
+
+    }
+
+    return respostas;
 }
 
 function calcular() {
 
-    alert("Calculando os sinais da mensagem e da portadora... " + E0);
-    //Sinal da portadora
-    return 'vixi_maria_galera';
-}
-
-function mostrar_sinais(analise){
-
     let respostas = document.getElementsByClassName("area_respostas")[0];
     let paragrafo = document.createElement("p");
-    let string = calcular();
-    paragrafo.append(string);
+
+    c = "c(t) = " + E0 + "*cos(2*\u03C0*" + f0 + "^" + f010 + "*t)";
+
+    paragrafo.append(c);
+
+
+
+
     respostas.appendChild(paragrafo);
+
 }
