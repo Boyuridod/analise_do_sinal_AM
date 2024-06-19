@@ -1,68 +1,78 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+    <!DOCTYPE html>
+    <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avaliação 3</title>
-    <link rel="stylesheet" href="style/index.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Avaliação 3</title>
+        <link rel="stylesheet" href="style/index.css">
+    </head>
 
-<body>
-    <header>
+    <body>
+        <header>
 
-    </header>
-    <section class="content">
-        <div class="title">
-            Avaliação 3
-        </div>
-        <div class="area_equacao">
-            <!-- Primeira parte de equação -->
-            <label for="">Equação:</label>
-            <input type="number" placeholder="E0/2" id="id1">
-            <label for="">[δ(</label>
-            <input type="number" placeholder="fm" id="id2">
-            <label for="">.10^</label>
-            <input type="number" placeholder="0" id="id3">
-            <label for=""> - </label>
-            <input type="number" placeholder="f0" id="id4">
-            <label for="">.10^</label>
-            <input type="number" placeholder="0" id="id5">
-            <label for="">] + </label>
-            <!-- Segunda parte da equação -->
-            <input type="number" placeholder="(u*E0) / 2" id="id6">
-            <label for="">[M(</label>
-            <input type="number" placeholder="f" id="id7">
-            <label for="">.10^</label>
-            <input type="number" placeholder="0" id="id8">
-            <label for=""> + </label>
-            <input type="number" placeholder="f0" id="id9">
-            <label for="">.10^</label>
-            <input type="number" placeholder="0" id="id10">
-            <label for="">) + </label>
-            <label for="">M(</label>
-            <input type="number" placeholder="f" id="id11">
-            <label for="">.10^</label>
-            <input type="number" placeholder="0" id="id12">
-            <label for=""> + </label>
-            <input type="number" placeholder="f0" id="id13">
-            <label for="">.10^</label>
-            <input type="number" placeholder="0" id="id14">
-            <label for="">)]</label>
-        </div>
-        <!-- Botões de ação -->
-        <div class="botoes_de_acao">
-            <button type="submit" id="calcular" onclick="recebeValores()">Calcular</button>
-            <button type="reset" id="limpar" onclick="">Limpar</button>
-        </div>
-        <!-- Aqui ficarão as respostas -->
-        <div class="area_respostas">
-            
-        </div>
-    </section>
-    <footer>
+        </header>
+        <section class="content">
+            <div class="title">
+                Avaliação 3
+            </div>
+            <div class="area_equacao">
+                <!-- Primeira parte de equação -->
+                <label for="">Equação:</label>
+                <input type="number" placeholder="E0/2" id="id1">
+                <label for="">[δ(</label>
+                <input type="number" placeholder="fm" id="id2">
+                <label for="">.10^</label>
+                <input type="number" placeholder="0" id="id3">
+                <label for=""> - </label>
+                <input type="number" placeholder="f0" id="id4">
+                <label for="">.10^</label>
+                <input type="number" placeholder="0" id="id5">
+                <label for="">] + </label>
+                <!-- Segunda parte da equação -->
+                <input type="number" placeholder="(u*E0) / 2" id="id6">
+                <label for="">[M(</label>
+                <input type="number" placeholder="f" id="id7">
+                <label for="">.10^</label>
+                <input type="number" placeholder="0" id="id8">
+                <label for=""> + </label>
+                <input type="number" placeholder="f0" id="id9">
+                <label for="">.10^</label>
+                <input type="number" placeholder="0" id="id10">
+                <label for="">) + </label>
+                <label for="">M(</label>
+                <input type="number" placeholder="f" id="id11">
+                <label for="">.10^</label>
+                <input type="number" placeholder="0" id="id12">
+                <label for=""> + </label>
+                <input type="number" placeholder="f0" id="id13">
+                <label for="">.10^</label>
+                <input type="number" placeholder="0" id="id14">
+                <label for="">)]</label>
+            </div>
+            <!-- Botões de ação -->
+            <div class="botoes_de_acao">
+                <button type="submit" id="calcular" onclick="recebeValores()">Calcular</button>
+                <button type="reset" id="limpar" onclick="">Limpar</button>
+            </div>
+            <!-- Aqui ficarão as respostas -->
+            <div class="area_respostas">
+                
+            </div>
+        </section>
 
-    </footer>
-    <script src="script/avaliacao3.js"></script>
-</body>
-</html>
+        <div id="customAlert" class="custom-alert">
+            <div class="custom-alert-content">
+                <span class="close-button" onclick="closeAlert()">&times;</span>
+                <h2 id="alertTitle">Alert</h2>
+                <p id="alertMessage"></p>
+                <button onclick="closeAlert()">OK</button>
+            </div>
+        </div>
+        
+        <footer>
+
+        </footer>
+        <script src="script/avaliacao3.js"></script>
+    </body>
+    </html>
