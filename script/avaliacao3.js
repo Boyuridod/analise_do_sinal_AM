@@ -115,7 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-
     // Make the functions available globally if needed
     window.recebeValores = recebeValores;
     window.closeAlert = closeAlert;
