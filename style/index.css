@@ -1,6 +1,7 @@
 .area_equacao input{
 
-    width: 2em;
+    width: 5vw;
+    min-width: 10px;
     text-align: end;
 }
 
