@@ -41,7 +41,11 @@
 .botoes_de_acao {
 
     padding: 1.25em;
+}
 
+.buttons {
+    width: 2vm;
+    height: 2vm;
 }
 
 /* Style for the custom alert */
@@ -89,8 +93,11 @@
 
 }
 
-/* .area_resposta{
-
-    
-
-} */
+.area_respostas{
+    text-align : center;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: rgb(19, 3, 32);
+    padding-bottom: 1%;
+}

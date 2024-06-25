@@ -12,19 +12,28 @@ document.addEventListener("DOMContentLoaded", function () {
     function recebeValores() {
         try {
             E0 = parseFloat(document.getElementById("id1").value) / 2;
+
             fm = parseFloat(document.getElementById("id2").value);
             fm10 = parseFloat(document.getElementById("id3").value);
             f0 = parseFloat(document.getElementById("id4").value);
             f010 = parseFloat(document.getElementById("id5").value);
-            u = (parseFloat(document.getElementById("id6").value) * 2) / E0;
-            fm2 = parseFloat(document.getElementById("id7").value);
-            fm2_10 = parseFloat(document.getElementById("id8").value);
-            f0_2 = parseFloat(document.getElementById("id9").value);
-            f0_2_10 = parseFloat(document.getElementById("id10").value);
+
+            fm2 = parseFloat(document.getElementById("id6").value);
+            fm2_10 = parseFloat(document.getElementById("id7").value);
+            f0_2 = parseFloat(document.getElementById("id8").value);
+            f0_2_10 = parseFloat(document.getElementById("id9").value);
+
+            u = (parseFloat(document.getElementById("id10").value) * 2) / E0;
+            
             fm3 = parseFloat(document.getElementById("id11").value);
             fm3_10 = parseFloat(document.getElementById("id12").value);
             f0_3 = parseFloat(document.getElementById("id13").value);
             f0_3_10 = parseFloat(document.getElementById("id14").value);
+
+            fm4 = parseFloat(document.getElementById("id15").value);
+            fm4_10 = parseFloat(document.getElementById("id16").value);
+            f0_4 = parseFloat(document.getElementById("id17").value);
+            f0_4_10 = parseFloat(document.getElementById("id18").value);
 
             let analise = validar();
 
@@ -44,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function validar() {
         let respostaMens = 'Verifique se você digitou corretamente os ';
-        let respostaPort = 'Verifique também se ';
+        let respostaPort = 'Verifique também se você digitou corretamente os ';
 
         if (fm != fm2 || fm != fm3 || fm2 != fm3) {
             respostaMens += 'dados da frequência da mensageira';
