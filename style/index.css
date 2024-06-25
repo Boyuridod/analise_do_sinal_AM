@@ -44,8 +44,8 @@
 }
 
 .buttons {
-    width: 2vm;
-    height: 2vm;
+    width: 6vw;
+    height: 5vh;
 }
 
 /* Style for the custom alert */
@@ -87,6 +87,24 @@
     cursor: pointer;
 }
 
+#calcular{
+
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: rgb(0, 209, 0);
+    color: white;
+
+}
+
+#limpar{
+
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: red;
+    color: white;
+
+}
+
 #id10{
 
     width: 8vw;
@@ -101,3 +119,4 @@
     color: rgb(19, 3, 32);
     padding-bottom: 1%;
 }
+
